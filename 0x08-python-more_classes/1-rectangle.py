@@ -4,42 +4,36 @@
 
 class Rectangle:
     """ The class reps a Rectangle"""
-    def __init__(self, length=0, width=0):
-        """ 
-The rectangle is initialized with the length and width as given
-
-Args:
-The length and width are of type int initialized to a default value 0
- """
-        self.length = length
+    def __init__(self, height=0, width=0):
+        """ The rectangle is initialized with the length and width as given
+        Args:
+        The length and width are of type int initialized to a default value 0
+        """
+        self.height = height
         self.width = width
 
-    @property
+     @property
     def width(self):
-        """ 
-Gets the width of the rectangle and returns the same
- """
+        """Ges the width of the rectangle."""
         return self.__width
 
     @width.setter
     def width(self, value):
         if not isinstance(value, int):
-            raise TypeError("width has to be an interger")
-        elif value < 0:
+            raise TypeError("width must be an integer")
+        if value < 0:
             raise ValueError("width must be >= 0")
         self.__width = value
 
-        
     @property
-    def length(self):
-        """ Gets the length of the rectangle and returns the same"""
-        return self.__length
-    
-    @length.setter
-    def length(self, value):
-        """ Initialize the height of the rectangle"""
+    def height(self):
+        """Gets the height of the rectangle."""
+        return self.__height
+
+    @height.setter
+    def height(self, value):
         if not isinstance(value, int):
-            raise TypeError("length has to be an interger")
-        elif value < 0:
-            raise ValueError("length must be >= 0")
-        self.__length = value
+            raise TypeError("height must be an integer")
+        if value < 0:
+            raise ValueError("height must be >= 0")
+        self.__height = value
