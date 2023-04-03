@@ -1,10 +1,12 @@
 #!/usr/bin/python3
 
 """ class Rectangle that defines a rectangle"""
+
+
 class Rectangle:
     """represents a class Rectangle"""
     def __init__(self, width=0, height=0):
-        """initializes the instance attributes width and height with the value 0"""
+        """sets the instance attributes width and height with the value 0"""
         self.__width = width
         self.__height = height
 
