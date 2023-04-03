@@ -19,7 +19,7 @@ The length and width are of type int initialized to a default value 0
         """ 
 Gets the width of the rectangle and returns the same
  """
-        return self._width
+        return self.__width
 
     @width.setter
     def width(self, value):
@@ -27,12 +27,13 @@ Gets the width of the rectangle and returns the same
             raise TypeError("width has to be an interger")
         elif value < 0:
             raise ValueError("width must be >= 0")
-        self._width = value
+        self.__width = value
+
         
     @property
     def length(self):
         """ Gets the length of the rectangle and returns the same"""
-        return self._length
+        return self.__length
     
     @length.setter
     def length(self, value):
@@ -41,4 +42,4 @@ Gets the width of the rectangle and returns the same
             raise TypeError("length has to be an interger")
         elif value < 0:
             raise ValueError("length must be >= 0")
-        self._length = value
+        self.__length = value
