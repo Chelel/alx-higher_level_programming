@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-""" creates an empty class Rectangle that defines a rectangle"""
+""" create an empty class Rectangle that defines a rectangle"""
 
 class Rectangle:
+    """Epmpty class Rectangle"""
     pass
