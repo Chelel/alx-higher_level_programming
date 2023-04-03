@@ -5,9 +5,9 @@
 class Rectangle:
     """ The class reps a Rectangle"""
     def __init__(self, height=0, width=0):
-        """ The rectangle is initialized with the length and width as given
+        """ The rectangle is initialized with the height and width as given
         Args:
-        The length and width are of type int initialized to a default value 0
+        The height and width are of type int initialized to a default value 0
         """
         self.height = height
         self.width = width
