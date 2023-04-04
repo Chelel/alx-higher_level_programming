@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-#function that adds two intergers
+# function that adds two intergers
 
 
 def add_integer(a, b=98):
@@ -23,8 +23,3 @@ def add_integer(a, b=98):
         b = int(b)
 
     return a+b
-
-
-
-
-
