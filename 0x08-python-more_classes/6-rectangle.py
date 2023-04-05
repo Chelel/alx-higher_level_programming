@@ -4,6 +4,13 @@
 
 
 class Rectangle:
+    """Class Rectangle that takes in args for width and height
+    of a rectangle, and contains methods for calculation of the
+    area or perimeter. __str__, __repr__, and __del__
+    fuctionality defined below.
+    Attributes:
+        number_of_instances (int): counter incrementing for every
+            instantiation, and decrementing for every instance deletion."""
     number_of_instances = 0
 
     """represents a class Rectangle"""
@@ -45,7 +52,7 @@ class Rectangle:
         return self.__width * self.__height
 
     def perimeter(self):
-        if self.__width is 0 or self.__height is 0:
+        if self.__width == 0 or self.__height == 0:
             return 0
         else:
             return (2 * self.__width) + (2 * self.__height)
@@ -54,10 +61,12 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return ''
         else:
-            return ('#' * self.__width + '\n') * self.__height
+            col = '#' * self.__width + '\n'
+            row = col * self.__height
+            res = row.rstrip()
 
     def __repr__(self):
-        return "Rectangle(% i, % i)" % (self.__width, self.__height)
+        return "Rectangle({}, {})".format(self.__width, self.__height)
 
     def __del__(self):
         Rectangle.number_of_instances -= 1
