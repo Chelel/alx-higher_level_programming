@@ -50,10 +50,10 @@ class Rectangle:
             return ''
         else:
             # height = widht = 4
-           col  = '#' * self.__width + '\n'
-           row = col * self.__height
-           result = row.rstrip()
-           return result
+            col = '#' * self.__width + '\n'
+            row = col * self.__height
+            result = row.rstrip()
+            return result
 
     def __repr__(self):
-        return "Rectangle({}, {})".format (self.__width, self.__height)
+        return "Rectangle({}, {})".format(self.__width, self.__height)
