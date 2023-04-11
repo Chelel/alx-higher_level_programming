@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+ #!/usr/bin/python3
 """7-base_geometry.py: Integer validator"""
 
 
