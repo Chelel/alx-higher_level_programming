@@ -28,4 +28,3 @@ class Student:
             if hasattr(self, key):
                 dict1[key] = getattr(self, key)
         return dict1
-
