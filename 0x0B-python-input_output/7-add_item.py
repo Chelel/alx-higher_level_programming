@@ -12,7 +12,7 @@ argv_n = argv[1:]
 
 try:
     txt_list = son_file("add_item.json")
-except:
+except FileNotFoundError:
     txt_list = []
 finally:
     for arg in argv_n:
