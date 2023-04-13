@@ -34,4 +34,3 @@ class Student:
 
         for key in json:
             self.__dict__.update({key: json[key]})
-
