@@ -11,7 +11,7 @@ load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
 argv_n = argv[1:]
 
 try:
-    txt_list = son_file("add_item.json")
+    txt_list = json_file("add_item.json")
 except FileNotFoundError:
     txt_list = []
 finally:
