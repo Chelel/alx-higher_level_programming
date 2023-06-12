@@ -9,7 +9,6 @@ class BaseGeometry:
         area() is not implemented"""
         raise Exception("area() is not implemented")
 
-
     def integer_validator(self, name, value):
         "Public instance method that validates value"""
         if not isinstance(value, int):
@@ -25,5 +24,3 @@ class Rectangle(BaseGeometry):
         self.integer_validator("width", width)
         self.__height = height
         self.integer_validator("height", height)
-
-
