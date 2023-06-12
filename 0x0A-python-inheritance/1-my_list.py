@@ -13,4 +13,4 @@ class MyList(list):
         but sorted"""
 
         sorted_list = sorted(self)
-        print(sorted_listii)
+        print(sorted_list)
