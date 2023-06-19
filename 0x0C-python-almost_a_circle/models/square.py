@@ -12,20 +12,24 @@ class Square(Rectangle):
 
     @property
     def size(self):
+        """size getter"""
         return self.width
 
     @size.setter
     def size(self, value):
+        """size setter"""
         self.width = value
         self.height = value
 
     def __str__(self):
+        """returns the square shape info"""
         return "[Square] ({:d}) {:d}/{:d} - {:d}".format(self.id,
                                                          self.x,
                                                          self.y,
                                                          self.height)
 
     def update(self, *args, **kwargs):
+        """assigns attributes"""
         if len(args) > 0:
             self.id = args[0]
         if len(args) > 1:
