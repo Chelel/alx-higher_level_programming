@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-"""lists all cities from the database 
-  take 3 arguments: mysql username, mysql password and database name"""
+"""lists all cities from the database, take 3 arguments:
+    mysql username, mysql password and database name"""
 
 
 import sys
