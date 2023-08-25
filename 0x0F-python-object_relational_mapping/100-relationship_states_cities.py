@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """creates the State “California” with the
-City “San Francisco”"""
+City “San Francisco”. """
 
 
 import sys

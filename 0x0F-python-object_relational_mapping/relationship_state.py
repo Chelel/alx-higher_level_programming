@@ -9,6 +9,7 @@ from relationship_city import Base, City
 
 
 class State(Base):
+    """Class State, represent a relationship with the class City"""
     __tablename__ = "states"
     id = Column(Integer, primary_key=True)
     name = Column(String(128), nullable=False)
